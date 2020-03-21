@@ -8,7 +8,7 @@
         id="signin-button"
         @click.prevent="signIn"
       >
-        Sign In with Blockstack
+        使用Blockstack登录
       </a>
     </p>
   </div>
