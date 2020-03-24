@@ -1,6 +1,6 @@
 <template>
   <div class="panel-landing" id="section-1">
-    <h1 class="landing-heading">Hello, Blockstack!</h1>
+    <h1 class="landing-heading">Hello, PIMStack!</h1>
     <p class="lead">
       <a
         href="#"

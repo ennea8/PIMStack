@@ -1,19 +1,11 @@
 <template>
-  <div class="panel-welcome" id="section-2">
-    <div class="avatar-section">
-      <img :src="avatar" class="img-rounded avatar" id="avatar-image">
+  <div class="nav">
+    <div class="user">
+      <img :src="avatar" class="img-rounded avatar">
+      <div>{{ givenName }}</div>
     </div>
-    <h1 class="landing-heading">你好, <span id="heading-name">{{ givenName }}</span>!</h1>
-    <p class="lead">
-      <a
-        href="#"
-        class="btn btn-primary btn-lg"
-        id="signout-button"
-        @click.prevent="signOut"
-      >
-        注销
-      </a>
-    </p>
+
+    <el-button  @click.prevent="signOut">注销</el-button>
   </div>
 </template>
 
@@ -49,4 +41,18 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+  .nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+  .nav .avatar{
+    width: 30px;
+    height: 30px;
+  }
+  .user{
+    font-size: 12px;
+  }
+</style>
