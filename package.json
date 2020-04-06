@@ -21,7 +21,8 @@
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test": "vue-cli-service build"
+    "test": "vue-cli-service build",
+    "radiks-start": "MONGODB_URI=mongodb://aaa:123456@127.0.0.1:27017/aaa && radiks-server"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -45,6 +46,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.9.0",
+    "radiks-server": "^0.3.0-beta.1",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.5.21"
   },

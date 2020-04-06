@@ -57,4 +57,16 @@
 
 ![](./documents/笔记查看流程.jpg)
 
+## 本地开发
+
+### 启动mongodb
+
+```
+    cd _sercides
+    docker-compose up
+```
+### 启动radik server
+```
+    npm run radiks-start
+```
 
