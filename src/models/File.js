@@ -9,18 +9,14 @@ export default class File extends Model {
     static schema = {
       creator: String,
       name: String,
-      type: String,
-      description: String,
+      type: String, // 文件类型
+      description: String, // 文件描述
       binary: String, // 二进制内容
       url: String, // url
-      flag: {
+      flag: { // 加密标记
         type: Boolean,
         decrypted: true
       },
-      sharedGroup: String // 如果共享，共享的群组
-    }
-
-    static defaults = {
-      content: ''
+      sharedGroupId: String // 如果共享，共享的群组
     }
 }

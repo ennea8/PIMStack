@@ -1,23 +1,19 @@
 import { Model } from 'radiks'
 
-// 对内容进行分组
+// 对文件进行分组
 export default class Directory extends Model {
     static className = 'Directory';
 
     static schema = {
-      creator: String,
-      name: String,
-      description: String,
-      type: String,
-      flag: {
+      creator: String, // 创建者ID
+      name: String, // 文件夹名字
+      description: String, // 描述
+      type: String, // 预留，可以标记存储方式，比如本地硬盘/第三方？
+      flag: { // 加密标记
         type: Boolean,
         decrypted: true
       },
-      sharedGroup: String // 如果共享，共享的群组
+      sharedGroupId: String // 如果共享，共享的群组
 
-    }
-
-    static defaults = {
-      content: ''
     }
 }
